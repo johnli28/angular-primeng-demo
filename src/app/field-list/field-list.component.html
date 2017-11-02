@@ -1,0 +1,26 @@
+<div class="field-mgr-toolbar">
+  <div class="field-mgr-title">
+    Master Field List
+  </div>
+  <div class="field-mgr-buttons">
+   <button pButton type="button" (click)="count()" label="New"></button>
+   <button pButton type="button" (click)="count()" label="Edit"></button>
+   <button pButton type="button" (click)="count()" label="Delete"></button>
+  </div>
+</div>
+<div class="ul-g" style="background-color: gray; padding: 6px;">
+  <p-dataTable [value]="fieldList" [(selection)]="selectedFields" dataKey="fieldID"
+               [paginator]="true" [rows]="15" [headerCheckboxToggleAllPages]="true"
+               (onRowSelect)="onRowSelect($event)" (onRowUnselect)="onRowUnselect($event)"
+              [style]="{'border-radius':'6px'}">
+    <p-column [style]="{'width': '38px'}" selectionMode="multiple"></p-column>
+    <p-column field="fieldID" header="FID" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+    <p-column field="fieldName" header="Acronym" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+    <p-column field="rwfType" header="RWF type" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+    <p-column field="rwfLength" header="RWF length" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+    <p-column field="trwfType" header="TRWF type" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+    <p-column field="trwfLength" header="TRWF length" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+    <p-column field="fieldStatus" header="Status" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+    <p-column field="fieldDescription" header="Description" [filter]="true" filterMatchMode="contains" filterPlaceholder="Search"></p-column>
+  </p-dataTable>
+</div>

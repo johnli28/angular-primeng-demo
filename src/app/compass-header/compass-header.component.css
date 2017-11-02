@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+  /*background: #f6a828;*/
+  background: #333333;
+}
+.header-title {
+  margin-left: 16px;
+  font-size: large;
+  color: #f6a828;
+}
+.header-tab-menu {
+  align-self: flex-end;
+}

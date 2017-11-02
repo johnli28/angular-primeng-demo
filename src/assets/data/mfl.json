@@ -1,0 +1,35 @@
+{
+    "result": [
+    {
+        "fieldID": "1",
+        "fieldName": "PROD_PERM",
+        "rwfType": "UNIT",
+        "rwfLength": "3",
+        "trwfType": "UNIT",
+        "trwfLength": "3",
+        "fieldStatus": "Active",
+        "fieldDescription": "PERMISSION" 
+    },
+    {
+        "fieldID": "2",
+        "fieldName": "RDNDISPLAY",
+        "rwfType": "UNIT",
+        "rwfLength": "2",
+        "trwfType": "UNIT",
+        "trwfLength": "2",
+        "fieldStatus": "Active",
+        "fieldDescription": "DISPLAYTEMPLATE" 
+    },
+    {
+        "fieldID": "3",
+        "fieldName": "DSPLY_NAME",
+        "rwfType": "RMTES_STRING",
+        "rwfLength": "17",
+        "trwfType": "RMTES_STRING",
+        "trwfLength": "17",
+        "fieldStatus": "Active",
+        "fieldDescription": "DISPLAY NAME" 
+    }
+  ],
+  "success": true
+}

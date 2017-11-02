@@ -1,0 +1,14 @@
+@import "../../assets/themes/common/two-column-layout";
+
+.field-mgr-toolbar {
+  @include two-column-layout;
+}
+.field-mgr-title {
+  padding-left: 20px;
+  color: #f6a828;
+  font-size: 1.3em;
+}
+.field-mgr-buttons {
+  padding-right: 30px;
+  margin: 8px 0;
+}
